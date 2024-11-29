@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stle.css">
-    <title>Peanuts Adventure</title>
+<link rel="stylesheet" href="style.css">
+<title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-<p>Um dia desses, dentro de um livro da biblioteca do colegio, eu descobri uma carta antiga sobre uma cidade perdida, esondida por riquezas e belezas naturais.
-    Nesta carta, a autora deixa algumas pistas para encontra-la e eu decidi segui-las!
+<main>
+<div class="passo ativo" id="passo-0">
+<img src="cenario-passo0.png" alt="cenario-passo0">
+<p>Um dia dsses, dentro de um livro da biblioteca do colegio,
+eu descobri uma carta antiga sobre uma cidade perdida,
+encondida por riquezas e belezas naturais.
+Nessa carta, a autora deixa algumas pistas para
+encontrar essa cidade e eu decidi segui-las!
 </p>
 <button class="btn-proximo" data-proximo="1">New Orleans</button>
-   <button class="btn-proximo" data-proximo="2">Cairo</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <p>Voce chegou a New Orleans descendo pelo rio Mississippi, para encontrar a primeira pista</p>
-<button class="btn-proximo" data-proximo="3">Procurar a pista no Cemiterio Saint Louis</button>
-      <button class="btn-proximo" data-proximo="4"> Desistir e ir para casa</button>
-        </div>
-    </main>
+<button class="btn-proximo" data-proximo="2">Londres</button>
+<div class="passo" id="passo-1">
+<p>Voce chegou a New Orleans descendo pelo rio Mississippi, para encontrar a primeira pista </p>
+<button class="btn-proximo" data-proximo="3">Procurar a pista no cemiterio Saint Louis</button>
+<button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+</div>
+</div>
+<div class="passo" id="passo-2">
+<p>Em New Orleans, voce visita a parte historica da cidade.
+Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar
+a proxima pista em um dos pontos turisticos da cidade. Por qual voce comeca?</p>
+<button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
+<button class="btn-proximo" data-proximo="6">Explorar os deques proximos</button>
+<div class="passo" id="passo-7">
+<p>No Mississippi, a busca pela cidade perdida se intensifica.Voce se depara com um rio bifurcado.</p>
+<button class="btn-proximo" data-proximo="9">Seguir pelo rio a esquerda</button>
+<button class="btn-proximo" data-proximo="10">Seguir pelo rio a direita</button>
+</div>
+<div class="passo" id="passo-8">
+<p>De volta as igrejas, voce finalmente encontra o mapa antigo. Agora, para o Mississippi!</p>
+<button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+</div>
+<div class="passo" id="passo-9">
+<p>O rio a esquerda leva voce a uma cachoeira escondida com inscricoes antigas que revelam a entrada da
+cidade perdida.</p>
+<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+</div>
+<div class="passo" id="passo-10">
+<p>O rio a direita termina em uma area pantanosa. Apesar de belas vistas, nao ha sinais da cidade perdida
+aqui.</p>
+<button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+</div>
+<div class="passo" id="passo-11">
+<img src="cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+<p>Dentro da cidade perdida, voce descobre tesouros inimaginaveis e decide se dedicar a estudar e preservar
+este lugar</p>
+</div>
+<div class="passo" id="passo-12">
+<p>Retornando e escolhendo o rio a esquerda, voce finalmente encontra a cachoeira escondida e as inscricoes
+que levam a cidade perdida.</p>
+<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+</div>
+</div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
-
